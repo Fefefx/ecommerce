@@ -1,5 +1,2 @@
-#Dependências do Composer
-vendor/
-
 #Cache de páginas da web
 views-cache/
