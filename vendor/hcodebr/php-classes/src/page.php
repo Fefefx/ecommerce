@@ -12,7 +12,7 @@ class Page
         "data" => []
     ];
 
-    public function __construct($opts = array())
+    public function __construct($opts = array(), $tpl_dir = "/views/")
     {
         $cacheDirectory = $_SERVER["DOCUMENT_ROOT"] . "/views-cache/";
         if(!is_dir($cacheDirectory)){
@@ -20,7 +20,7 @@ class Page
         }
         $this->options = array_merge($this->defaults, $opts);
         $config = array(
-            "tpl_dir" => $_SERVER["DOCUMENT_ROOT"] . "/views/",
+            "tpl_dir" => $_SERVER["DOCUMENT_ROOT"] . $tpl_dir,
             "cache_dir" => $cacheDirectory,
             "debug" => false
         );
