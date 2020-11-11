@@ -2,4 +2,4 @@
 views-cache/
 
 #Informações do provedor de email
-vendor/hcodebr/php-classes/src/Mailer.php
+#vendor/hcodebr/php-classes/src/Mailer.php
