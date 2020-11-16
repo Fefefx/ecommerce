@@ -56,3 +56,4 @@ $app->get('/admin/categories', function(){
 		"categories" => $categories
 	]);
 });
+
