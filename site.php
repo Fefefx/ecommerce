@@ -119,3 +119,9 @@ $app->post('/login', function(){
 	header("Location: /checkout");
 	exit;
 });
+
+$app->get('/logout', function(){
+	User::logout();
+	header("Location: /login");
+	exit;
+});
